@@ -18,7 +18,7 @@ Do mais escuro para o mais claro
 }
 
 body, html {
-    background-color: #011C26;
+    background-color: #021c1f;
     height: 99vh;
     width: 99vw;
 }
@@ -30,6 +30,8 @@ section {
         transform: translate(-50%, -50%);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
         border-radius: 20px;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
 }
 
 #imagem {
@@ -40,9 +42,11 @@ section {
     border-radius: 20px 20px 0px 0px;
     background-repeat: no-repeat;
     background-position: center;
+    display: block;
 }
 
 #formulario {
+    display: block;
     background-color: #365659;
     width: 300px;
     height: 400px;
@@ -60,11 +64,73 @@ p {
     color: #acb9b8;
     padding: 10px 0px 40px 0px;
     text-align: center;
+    font-size: 0.8em;
 }
 
-#formulario #email, #senha {
-    display: block;
-    background-color: white;
-    con
+.campo label {
+    display: none;
+}
 
+div#formulario .campo {
+    background-color: #011C26;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 7px 0px;
+    padding: px;
+    border: 1px solid #011C26;
+}
+
+.campo span {
+    color: white;
+    font-size: 2em;
+    padding: 9px 1px 0px 6px;
+    width: 40px;
+}
+
+.campo > input[type=password], input[type=email] {
+    border: 0px;
+    background-color: #dee0e0;
+    border-radius: 5px;
+    height: 100%;
+    width: calc(100% - 45px);
+    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.603);
+    transform: translateY(-11px);
+    font-size: 1em;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #98afae;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+form > input[type=submit]:hover {
+    background-color: #62918c;
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border: 0px;
+    color: #497572;
+    border-radius: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 6px;
+}
+
+form > a.botao:hover {
+    background-color: #62918c;
+    color: white;
 }
