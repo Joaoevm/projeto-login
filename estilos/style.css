@@ -28,14 +28,14 @@ section {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
         border-radius: 20px;
 }
 
 #imagem {
     background-image: url(../imagens/pexels-adam-lukac-254247-1059979.jpg);
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ section {
 
 #formulario {
     background-color: #365659;
-    width: 350px;
+    width: 300px;
     height: 400px;
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
