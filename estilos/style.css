@@ -27,9 +27,11 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
         border-radius: 20px;
+
+        transform: translate(-50%, -50%);
         transition: width .3s, height .3s;
         transition-timing-function: ease;
 }
@@ -95,8 +97,9 @@ div#formulario .campo {
     height: 100%;
     width: calc(100% - 45px);
     box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.603);
-    transform: translateY(-11px);
     font-size: 1em;
+
+    transform: translateY(-11px);
 }
 
 form > input[type=submit] {
@@ -126,7 +129,7 @@ form > a.botao {
     font-size: 1em;
     text-decoration: none;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 9px;
     margin-top: 6px;
 }
 
